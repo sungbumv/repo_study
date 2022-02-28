@@ -15,7 +15,7 @@ namespace baekjoon.flow_1
             string name = Console.ReadLine();
             if(name.Length > 50)
             {
-                Console.WriteLine("50자를 넘지 않아야 한다.");
+                Console.WriteLine("50자를 넘지 않아야 한다."); 
             }
             else
             {
