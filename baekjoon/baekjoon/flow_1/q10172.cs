@@ -8,7 +8,7 @@ namespace baekjoon.flow_1
 {
     class q10172
     {
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             Console.WriteLine(@"|\_/|");
             Console.WriteLine(@"|q p|   /}");
