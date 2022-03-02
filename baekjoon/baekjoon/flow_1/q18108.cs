@@ -8,7 +8,7 @@ namespace baekjoon.flow_1
 {
     class q18108
     {
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             int inputData = Convert.ToInt32(Console.ReadLine());
 
