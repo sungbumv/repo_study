@@ -8,7 +8,7 @@ namespace baekjoon.flow_2
 {
     class q1330
     {
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             string inputdata = Console.ReadLine();
 
