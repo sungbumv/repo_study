@@ -8,7 +8,7 @@ namespace baekjoon.flow_2
 {
     class q14681
     {
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             int point_x = Convert.ToInt32(Console.ReadLine());
             int point_y = Convert.ToInt32(Console.ReadLine());
