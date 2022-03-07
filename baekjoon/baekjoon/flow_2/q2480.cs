@@ -10,7 +10,7 @@ namespace baekjoon.flow_2
     {
 
         //삼항연산으로 해야할듯.. 어렵네 (다시풀기)
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             string[] str = Console.ReadLine().Split(' ');
             int A = int.Parse(str[0]);

@@ -8,25 +8,29 @@ namespace baekjoon.flow_3
 {
     class q10950
     {
-        public static void noncomplete(string[] args)
+        public static void Main(string[] args)
         {
             int count = Convert.ToInt32(Console.ReadLine());
-            for(int num = 0; num < count; num++)
+         
+            
+            
+            string[] tempArray = new string[100];
+
+            for (int num = 0; num < count; num++)
             {
 
                 string input = Console.ReadLine();
                 string[] numbers = input.Split(' ');
 
-                int firstNum = Convert.ToInt32(numbers[0]);
-                int secondNum = Convert.ToInt32(numbers[1]);
+                if (Convert.ToInt32(numbers[0]) > 10 && Convert.ToInt32(numbers[1]) > 10) return;
+                if (Convert.ToInt32(numbers[0]) < 0 && Convert.ToInt32(numbers[1]) < 0) return;
 
-                if((secondNum > 0 && secondNum < 10) && (firstNum > 0 && firstNum < 10))
-                {
-                    string[] numberMemory = { };
-                    Array.Copy(numbers, numberMemory, num + 1);
-                    
-                }
+                tempArray[num] =  (Convert.ToInt32(numbers[0]) + Convert.ToInt32(numbers[1])).ToString();
 
+            }
+            for(int num = 0; num < count; num++)
+            {
+                Console.WriteLine(tempArray[num]);
             }
         }
     }
