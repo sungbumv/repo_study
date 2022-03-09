@@ -8,7 +8,7 @@ namespace baekjoon.flow_3
 {
     class q10950
     {
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             int count = Convert.ToInt32(Console.ReadLine());
          
