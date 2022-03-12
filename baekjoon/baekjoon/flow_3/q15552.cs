@@ -10,7 +10,7 @@ namespace baekjoon.flow_3
     class q15552
     {
         //string Reader,Builder 둘다 봐야할듯.. 
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             int numOfTimes = int.Parse(Console.ReadLine());
             StringBuilder builder = new StringBuilder();
