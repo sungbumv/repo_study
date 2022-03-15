@@ -8,18 +8,18 @@ using System.Windows;
 
 namespace study_WPF
 {
-    class MySQL
+    public class MySQL
     {
         public MySQL(string serverName, string dataBase, string userId, string userPw)
         {
 
-            MySqlConnection connection = new MySqlConnection("Server=" + serverName + ";Database=" + dataBase + ";Uid=" + userId + ";Pwd=" + userPw);
+            MySqlConnection _connection = new MySqlConnection("Server=" + serverName + ";Database=" + dataBase + ";Uid=" + userId + ";Pwd=" + userPw);
 
             // DB Open
-            connection.Open();
+            _connection.Open();
 
             //DB 연결여부 확인
-            Boolean pingFlag = connection.Ping();
+            Boolean pingFlag = _connection.Ping();
 
             //연결이 성공하였을 경우 
             if(pingFlag == true)
@@ -31,7 +31,17 @@ namespace study_WPF
                 MessageBox.Show("DB 연결 실패");
             }
 
-            connection.Close();
+            _connection.Close();
+        }
+
+        public MySqlConnection MySQLFunc(string serverName, string dataBase, string userId, string userPw)
+        {
+            MySqlConnection _connection = new MySqlConnection("Server=" + serverName + ";Database=" + dataBase + ";Uid=" + userId + ";Pwd=" + userPw);
+
+            // DB Open
+            _connection.Open();
+
+            return _connection;
         }
     }
 }
