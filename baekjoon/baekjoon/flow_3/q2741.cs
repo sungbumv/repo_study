@@ -9,7 +9,7 @@ namespace baekjoon.flow_3
 {
     class q2741
     {
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             int num = int.Parse(Console.ReadLine());
 
