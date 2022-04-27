@@ -8,7 +8,7 @@ namespace baekjoon.flow_3
 {
     internal class q2742
     {
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             // N을 입력
             // N ~ 1 까지 한줄에 하나씩 출력 
