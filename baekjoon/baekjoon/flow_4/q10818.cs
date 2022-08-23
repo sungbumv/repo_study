@@ -8,7 +8,7 @@ namespace baekjoon.flow_4
 {
     internal class q10818
     {
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
             //입력 : 첫째 줄에 정수의 개수 N을 입력받는다.
             // - N을 입력받고 정수로 바꾼다.
