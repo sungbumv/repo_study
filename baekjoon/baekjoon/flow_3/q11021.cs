@@ -8,7 +8,7 @@ namespace baekjoon.flow_3
 {
     internal class q11021
     {
-        public static void Main(string[] args)
+        public static void Complete(string[] args)
         {
             int loopNum     = Convert.ToInt32(Console.ReadLine());
         
