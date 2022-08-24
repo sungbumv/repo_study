@@ -8,34 +8,27 @@ namespace baekjoon.flow_3
 {
     internal class q2525
     {
-        public static void Main(string[] args)
+        public static void complete(string[] args)
         {
-            //첫째줄에는 현재시각 ( 0 ~ 23시  0 ~ 59분)
-            string[] inputHHmm = Console.ReadLine().Split(' ');
+            string[] str = Console.ReadLine().Split(' ');
+            int A = int.Parse(str[0]);
+            int B = int.Parse(str[1]);
+            int C = int.Parse(Console.ReadLine());
 
-            int inputHour = Convert.ToInt32(inputHHmm[0]);
-            int inputMinute = Convert.ToInt32(inputHHmm[1]);
+            B += C;
 
-            if (inputHour >= 0 && inputHour <= 23)
+            while (B >= 60)
             {
-                if(inputMinute >= 0 && inputMinute <= 59)
-                {
-                    string cookingTime = Console.ReadLine();
-                    int cooktime = Convert.ToInt32(cookingTime);
-                    if(cooktime >= 0 && cooktime <= 1000)
-                    {
-                        int secondHour = cooktime % 60;
-                        if (secondHour <= 60)
-                        {
-                            int secondMinute = secondHour;
-                            if(secondMinute + inputMinute < 60)
-                            {
-                                Console.WriteLine(secondHour + );
-                            }
-                        }
-                    }
-                }
+                A++;
+                B -= 60;
             }
+
+            if (A >= 24)
+            {
+                A -= 24;
+            }
+
+            Console.WriteLine(A + " " + B);
         }
     }
 }
