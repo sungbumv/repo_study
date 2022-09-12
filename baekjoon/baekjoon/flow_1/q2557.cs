@@ -4,16 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace baekjoon
+namespace baekjoon.flow_1
 {
-    class q2557
+    internal class q2557
     {
-        static void complete(string[] args)
+        public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
-            Console.ReadLine();
-
+            string str = "Hello World!";
+            Console.WriteLine(str);
         }
     }
 }
