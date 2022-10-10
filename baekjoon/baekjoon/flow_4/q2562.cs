@@ -1,23 +1,38 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace baekjoon.flow_4
 {
     internal class q2562
     {
-        public static void complete(string[] args)
+        public static void complete()
         {
-            string[] str = Console.ReadLine().Split('\n');
+           
+            int maxNum = 0;
+            int maxPoint = 0;
+            
+            int[] inArr = new int[10];
 
-            for(int inLoop = 0; inLoop < 9; inLoop++)
+            for(int idx = 1; idx < 10; idx++ )
             {
-                int first = int.Parse(str[inLoop]);
-                int second = int.Parse(str[inLoop]);
-                    
+                inArr[idx] = Convert.ToInt32(Console.ReadLine());
             }
+
+            for(int index = 1; index < 10; index++)
+            {
+                if (inArr[index] > inArr[index - 1])
+                {
+                    maxNum = inArr[index];
+                    maxPoint = index;
+                }
+                else
+                {
+                    maxNum = inArr[index - 1];
+                    maxPoint = index - 1;
+                }
+            }
+
+            Console.WriteLine(maxNum.ToString());
+            Console.WriteLine(maxPoint.ToString());
         }
     }
 }

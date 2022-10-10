@@ -8,7 +8,7 @@ namespace baekjoon.flow_3
 {
     internal class Q25304
     {
-        public static void Main()
+        public static void complete()
         {
             int totalAmount = Convert.ToInt32(Console.ReadLine());
             int totalTypeCnt = Convert.ToInt32(Console.ReadLine());
